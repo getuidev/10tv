@@ -35,10 +35,18 @@ ol,ul{list-style-type:none}
 .search .search-icon{float:right;position:absolute;right:-33px;top:-2px}
 .search .search-icon img{width:24px;height:24px}
 .search-form-btn{margin-bottom:0;padding:8px 16px;background-color:#f3c72e;font-size:14px;font-weight:400;color:#000;-webkit-transition:all .3s ease;transition:all .3s ease;z-index:1;border:0}
-.MenuBtn{float:left;margin:3px 0 0 9px;cursor:pointer;padding:5px 0 3px 0}
-.MenuBtn i{width:24px;display:block;border-top:2px solid #fff;padding-top:4px}
-.MenuBtn i:nth-child(2){top:23px;margin-left:0}
-.MenuBtn i:nth-child(3){top:27px}
+#menuToggle{display:block;z-index:1;-webkit-user-select:none;user-select:none}
+#menuToggle input{display:block;width:22px;height:22px;position:absolute;cursor:pointer;opacity:0;z-index:2;-webkit-touch-callout:none}
+#menuToggle span{display:block;width:22px;height:3px;margin-top:3px;position:relative;background:#fff;z-index:1;transform-origin:4px 0;transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s ease}
+#menuToggle span:first-child{transform-origin:0 0}
+#menuToggle span:nth-last-child(2){transform-origin:0 100%}
+#menuToggle input:checked~span{opacity:1;transform:rotate(45deg) translate(1px,1px);background:#232323}
+#menuToggle input:checked~span:nth-last-child(3){opacity:0;transform:rotate(0) scale(.2,.2)}
+#menuToggle input:checked~span:nth-last-child(2){opacity:1;transform:rotate(-45deg) translate(0,1px)}
+#menu{position:fixed;width:320px;height:100vh;margin:0;padding-bottom:50px;top:0;right:0;background-color:#fff;border-left:1px solid #eee;list-style-type:none;-webkit-font-smoothing:antialiased;transform-origin:0 0;transform:translate(100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1);overflow: auto;border-bottom: 3px solid #d70101;}
+#menu li{list-style:none;color:#fff;text-transform:uppercase;font-weight:700;padding:20px;cursor:pointer;border-bottom:1px solid #eee;display:block;margin:0}
+#menu li a{color:#353535;text-transform:uppercase;font-weight:700;cursor:pointer;text-decoration:none;font-family:Mallanna,sans-serif;font-size:23px}
+#menuToggle input:checked~ul{transform:none;opacity:1}
 .hot-now-menu{background-color:#fff;display:flex;align-items:center;margin-bottom:10px}
 .hot-now-menu .container{display:flex;justify-content:flex-start;align-items:center;min-height:50px;width:100%;padding-left:78px}
 .hot-now-menu .hot-now-HD{color:#fff;text-align:center;font-size:14px;font-weight:700;letter-spacing:0;line-height:23px;height:22px;width:82px;border-radius:6px 1px 6px 2px;background-color:#d70101;margin-right:10px}
@@ -78,8 +86,8 @@ ol,ul{list-style-type:none}
 .textgraint{padding:50% 10px 10px 10px;left:0;right:0;position:absolute;bottom:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) 20%,rgba(0,0,0,.1) 30%,rgba(0,0,0,.8) 70%,#000 100%);display:flex;align-items:end;pointer-events:none}
 .textgraint h3 a{color:#fff;white-space:initial;font-size:22px;font-family:Ramabhadra,sans-serif;font-weight:400;line-height:24px;display:block}
 .textgraint h3{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.webStoryWrapper .textgraint{border-radius:0 0 5px 5px;}
-.webStoryWrapper .textgraint h3 a{text-align:center;}
+.webStoryWrapper .textgraint{border-radius:0 0 5px 5px}
+.webStoryWrapper .textgraint h3 a{text-align:center}
 .wb-icon{border-radius:10px;padding:10px 10px 10px 10px;left:0;position:absolute;top:0}
 .latestNews_Block .newsList_wrapper ul{counter-reset:my-sec-counter}
 .latestNews_Block .newsList_wrapper ul li{border-bottom:2px dotted #ccc}
@@ -103,3 +111,28 @@ ol,ul{list-style-type:none}
 .list-news ul{list-style-type:circle;padding-left:30px}
 .list-news li{margin-bottom:10px}
 .list-news li a{color:#1a1a1a;font-family:Ramabhadra,sans-serif;font-size:16px;font-weight:400;line-height:22px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.topStories_Block .story_wrapper{display:flex;}
+.topStories_Block .topStories_BigMedia{width:400px;display: flex;justify-content: space-between;}
+.topStories_Block .list-news{width: calc(100% - 400px);}
+.topStories_Block .list-news li{border-bottom: 3px dotted #ccc;padding-bottom:10px}
+.topStories_Block .list-news li:last-child{border-bottom: none;margin-bottom:0;}
+.topStories_BigMedia figure{background: #eff2f5;width:48%}
+.topStories_BigMedia figure img{display: block;width:100%}
+.topStories_BigMedia figcaption{padding:10px;}
+.topStories_BigMedia figcaption h3 a{font-family:Ramabhadra,sans-serif;font-size:16px;font-weight:400;}
+.scrolltop{width:35px;height:35px;position:fixed;bottom:40px;right:20px;display:none;background-color:red;z-index:99;text-align:center;cursor:pointer}
+.scrolltop:after{border-bottom-style:solid;border-bottom-width:2px;border-right-style:solid;border-right-width:2px;content:"";display:inline-block;height:12px;width:12px;border-color:#fff;-moz-transform:rotate(225deg);-ms-transform:rotate(225deg);-webkit-transform:rotate(225deg);transform:rotate(225deg);margin-top:14px}
+.footer{background:#000;padding:30px 0 0;color:#b7b7b7;width:100%;float:left;font-size:14px;margin-top:20px}
+.footer .footer_top{display:flex;justify-content:space-around;font-family:Ramabhadra,sans-serif;font-size:16px;font-weight:400}
+.footer .footer_top .footer-logo{display:flex;align-items:center}
+.footer .footer_top .short-links ul,.social-links ul{padding-top:15px;line-height:29px}
+.footer .footer_top .short-links ul li a,.social-links ul li a{color:#b7b7b7}
+.social-links ul li a{display:flex;align-items:center}
+.social-links svg{display:flex;width:16px;height:16px;background-image:none;margin-right:10px;align-items:center;fill:#b7b7b7}
+.footer .footer-tags{padding:20px 0}
+.footer .footer-tags ul{display:flex}
+.footer .footer-tags ul li a{padding:10px 10px;color:#b7b7b7}
+.footer .footer-tags ul li::after{border-right:1px solid #fff;content:" "}
+.footer .footer-tags ul li:last-child::after{border-right:none}
+.footer .footer-credits{text-align:right;padding:10px 0;border-top:2px solid #fff}
+.footer .footer-credits a{color:#b7b7b7}
