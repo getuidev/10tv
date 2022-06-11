@@ -152,9 +152,9 @@ ol,ul{list-style-type:none}
 .article-img{margin-bottom:10px;position:relative}
 .article-img img{display:block;height:inherit}
 .articleBody p{color:#000;font-family:Mallanna,sans-serif;font-size:20px;font-weight:400;line-height:32px;margin-bottom:10px}
-.articleBody p a{color: #e75025;}
-.tags_wrapper{display: flex;flex-wrap: nowrap;overflow-x: auto;-webkit-overflow-scrolling: touch;padding:15px;align-items: center;}
-.tags_wrapper ul{white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
+.articleBody p a{color:#e75025}
+.tags_wrapper{display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:15px;align-items:center}
+.tags_wrapper ul{white-space:nowrap;overflow-x:auto;overflow-y:hidden}
 .scrolltop{width:35px;height:35px;position:fixed;bottom:40px;right:20px;display:none;background-color:red;z-index:99;text-align:center;cursor:pointer}
 .scrolltop:after{border-bottom-style:solid;border-bottom-width:2px;border-right-style:solid;border-right-width:2px;content:"";display:inline-block;height:12px;width:12px;border-color:#fff;-moz-transform:rotate(225deg);-ms-transform:rotate(225deg);-webkit-transform:rotate(225deg);transform:rotate(225deg);margin-top:14px}
 .footer{background:#000;padding:30px 0 0;color:#b7b7b7;width:100%;float:left;font-size:14px;margin-top:20px}
@@ -198,22 +198,17 @@ ol,ul{list-style-type:none}
 .bigMedia_Block figure .image-thumb img,.gallery_wrapper .mediaBox img,.topStories_BigMedia figure img{height:inherit}
 .list-news{margin-top:10px}
 .leftSidebar,.rightSidebar{width:100%}
-.breadcrumb li{font-weight: 500;color: #2e2f30;}
-.breadcrumb li a{color: #2e2f30;}
-.articleHD{font-size:26px;line-height:28px;}
-.articleBody p{font-size:20px;line-height:25px;}
+.breadcrumb li{font-weight:500;color:#2e2f30}
+.breadcrumb li a{color:#2e2f30}
+.articleHD{font-size:26px;line-height:28px}
+.articleBody p{font-size:20px;line-height:25px}
 .footer_container{padding:0 10px}
 .footer .footer_top{justify-content:flex-start;flex-wrap:wrap}
 .footer .footer_top .footer-logo{width:100%;justify-content:center;margin-bottom:30px}
 .footer_container .short-links{width:100%;margin-bottom:20px}
-.footer_container .short-links ul{display: flex;flex-wrap:wrap;}
-.footer_container .short-links ul li{margin-right: 10px;padding-right:10px;position: relative;}
-.footer_container .short-links ul li::before{position: absolute;
-    right: 0;
-    top: 34%;
-    border-right: solid 1px #afafaf;
-    content: '';
-    height: 10px;}
+.footer_container .short-links ul{display:flex;flex-wrap:wrap}
+.footer_container .short-links ul li{margin-right:10px;padding-right:10px;position:relative}
+.footer_container .short-links ul li::before{position:absolute;right:0;top:34%;border-right:solid 1px #afafaf;content:'';height:10px}
 .social-links{width:100%}
 .social-links ul{display:flex;flex-wrap:wrap}
 .social-links ul li{width:50%;margin-bottom:2%}
