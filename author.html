@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://10tv.in/favicon.ico" />
+    <meta name="keywords"
+        content="live updates, latest news, breaking news, live news, trending topics, live news today, India news, world news, current headlines, news online, news headlines, live news online, latest current headlines, education, science, technology, sports news, entertainment, politics news, opinion news" />
+    <meta name="description"
+        content="Latest News Headlines,Telugu news : Read Telugu News Online at 10TV Telugu. Get all the Telugu Breaking News and Latest current Telugu news headlines in online on Politics in India &amp; around the world. Stay updated with us Sports, Business, Entertainment News, Science, Technology, Health, etc in  10TV Telugu - 10tv.in" />
+    <title>10TV Telugu News : LIVE updates, Latest headlines, Breaking news, Top stories, Trending topics Telugu News ,
+        తెలుగు వార్తలు ,Online Telugu News ,Latest News in Telugu - 10TV Telugu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body style="background-color: #fff">
+    <div class="gutterLHS"></div>
+    <div class="gutterRHS"></div>
+    <header class="main_header">
+        <div class="topNav">
+            <div class="navbar_container">
+                <div class="site-logo">
+                    <a href="/"><img src="https://10tv.in/wp-content/themes/10tv/images/logo.png" alt="Telugu News"
+                            width="50" height="40"></a>
+                </div>
+                <div class="topLmenu">
+                    <ul>
+                        <li><a href="https://10tv.in/latest">తాజా వార్తలు</a></li>
+                        <li><a href="https://10tv.in/trending">ట్రెండింగ్</a></li>
+                        <li><a href="https://10tv.in/telangana">తెలంగాణ</a></li>
+                        <li><a href="https://10tv.in/andhra-pradesh">ఆంధ్రప్రదేశ్</a></li>
+                        <li><a href="https://10tv.in/crime">క్రైమ్</a></li>
+                        <li><a href="https://10tv.in/life-style">లైఫ్ స్టైల్</a></li>
+                        <li><a href="https://10tv.in/technology">టెక్నాలజీ</a></li>
+                        <li><a href="https://10tv.in/movies">సినిమా &amp; OTT</a></li>
+                        <li><a href="https://10tv.in/photo-gallery">ఫోటో గ్యాలరీ</a></li>
+                        <li><a href="https://10tv.in/exclusive-videos">వీడియోలు</a></li>
+                        <li><a href="https://10tv.in/national">జాతీయం</a></li>
+                        <!-- <li><a href="https://10tv.in/international">అంతర్జాతీయం</a></li>
+                        <li><a href="https://10tv.in/sports">క్రీడలు</a></li>
+                        <li><a href="https://10tv.in/agriculture">అగ్రికల్చర్</a></li> -->
+                    </ul>
+                </div>
+                <div class="topRmenu">
+                    <div class="live-tv blink">
+                        <a href="/live-tv">LIVE TV</a>
+                    </div>
+                    <div class="topSearch">
+                        <div class="search-icon"><i class="search_btn"></i></div>
+                        <form action="" method="get" id="headerSearch" class="search" style="display: none;">
+                            <div class="search-box">
+                                <input autocomplete="off" placeholder="Search" type="text" value="" id="searchText2"
+                                    name="q">
+                                <button class="search-form-btn" type="submit"><span>Search</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li><a href="https://10tv.in/latest" title="లేటెస్ట్">లేటెస్ట్</a></li>
+                            <li><a href="https://10tv.in/trending" title="ట్రెండింగ్">ట్రెండింగ్</a></li>
+                            <li><a href="https://10tv.in/telangana" title="తెలంగాణ">తెలంగాణ</a></li>
+                            <li><a href="https://10tv.in/andhra-pradesh" title="ఆంధ్రప్రదేశ్">ఆంధ్రప్రదేశ్</a></li>
+                            <li><a href="https://10tv.in/crime" title="క్రైమ్">క్రైమ్</a></li>
+                            <li><a href="https://10tv.in/life-style" title="లైఫ్ స్టైల్">లైఫ్ స్టైల్</a></li>
+                            <li><a href="https://10tv.in/technology" title="టెక్నాలజీ">టెక్నాలజీ</a></li>
+                            <li><a href="https://10tv.in/movies" title="సినిమా &amp; OTT">సినిమా &amp; OTT</a></li>
+                            <li><a href="https://10tv.in/photo-gallery" title="ఫోటో గ్యాలరీ">ఫోటో గ్యాలరీ</a></li>
+                            <li><a href="https://10tv.in/exclusive-videos" title="వీడియోలు">వీడియోలు</a></li>
+                            <li><a href="https://10tv.in/national" title="జాతీయం">జాతీయం</a></li>
+                            <li><a href="https://10tv.in/international" title="అంతర్జాతీయం">అంతర్జాతీయం</a></li>
+                            <li><a href="https://10tv.in/sports" title="క్రీడలు">క్రీడలు</a></li>
+                            <li><a href="https://10tv.in/agriculture" title="అగ్రికల్చర్">అగ్రికల్చర్</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-now-menu">
+            <div class="subNav">
+                <div class="hot-now-HD">HOT NOW</div>
+                <ul>
+                    <li><a href="https://10tv.in/tag/Amnesia-Pub" title="#AmnesiaPub">#AmnesiaPub</a></li>
+                    <li><a href="https://10tv.in/tag/SSC-Results" title="#SSCResults">#SSCResults</a></li>
+                    <li><a href="https://10tv.in/tag/Pawan-Kalyan" title="#PawanKalyan">#PawanKalyan</a></li>
+                    <li><a href="https://10tv.in/tag/monsoon" title="#Monsoon">#Monsoon</a></li>
+                    <li><a href="https://10tv.in/tag/petrol-prices" title="#PetrolPrices">#PetrolPrices</a></li>
+                    <li><a href="https://10tv.in/tag/monkeypox" title="#Monkeypox">#Monkeypox</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="categoryPage_wrapper">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="leftSidebar">
+                    <ol class="breadcrumb">
+                        <li>
+                            <div class="breadcrum">
+                                <ul>
+                                    <li>
+                                        <p id="breadcrumbs"><span><span><a href="https://10tv.in/">Telugu News</a> »
+                                                    <span><a href="https://10tv.in/author/saketh">Saketh Author</a>
+                                                    </span></span></span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="author-profile">
+                        <figure>
+                            <img width="100" height="100"
+                                src="https://10tv.in/wp-content/themes/10tv/images/10tv-logo-200x200-1.png" alt="">
+                            <figcaption>
+                                <h1>Saketh 10tv</h1>
+                                <span>Author- 10TV Telugu</span>
+                                <div class="author-social">
+                                    <a class="fb_icon" title="FaceBook" target="_blank" href="#"
+                                        rel="nofollow noopener"><i></i></a>
+                                    <a class="tw_icon" title="Twitter" target="_blank" href="#"
+                                        rel="nofollow noopener"><i></i></a>
+                                    <a class="insta_icon" title="Instagram" target="_blank" href="#"
+                                        rel="nofollow noopener"><i></i></a>
+                                    <a class="yt_icon" title="Youtube" target="_blank" href="#"
+                                        rel="nofollow noopener"><i></i></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="categoryNewsList_Wrapper">
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/crime/ap-cid-notices-to-tdp-general-secretary-gouthu-sireesha-once-again-442599.html"
+                                    title="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/New-Project-35.jpg"
+                                        alt="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/crime/ap-cid-notices-to-tdp-general-secretary-gouthu-sireesha-once-again-442599.html"
+                                        title="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి">Gouthu
+                                        Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:44 PM IST</div>
+                                <p>తెలుగు దేశం పార్టీ రాష్ట్ర ప్రధాన కార్యదర్శి, శ్రీకాకుళం జిల్లా పలాస
+                                    నియోజకవర్గ ఇంచార్జి గౌతు శిరీష‌కు ఏపీ సీఐడీ అధికారులు మరోసారి నోటీసులు జారీ
+                                    చేశారు.&nbsp; ఈనెల 20వ తేదీన మంగళగిరి సీఐడీ కార్యాలయంలో విచారణకు హాజరుకావాలని
+                                    ఆదేశించారు.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/spiritual/jyestabhishekam-abideyaka-abhishekam-seva-tickets-to-be-released-tomorrow-442590.html"
+                                    title="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/Jeyshtabhishekam.jpg"
+                                        alt="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/spiritual/jyestabhishekam-abideyaka-abhishekam-seva-tickets-to-be-released-tomorrow-442590.html"
+                                        title="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు">Tirumala
+                                        : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:22 PM IST</div>
+                                <p>తిరుమలలో జూన్ 12 నుంచి 14వతేదీ వరకు మూడు రోజులపాటు జరిగే జ్యేష్టాభిషేకం సేవా టికెట్లు
+                                    జూన్ 11 నుంచి 13వ తేదీ వరకు తిరుమలలో కరం0ట్ బుకింగ్‌లో భక్తులకు అందుబాటులో ఉంటాయని
+                                    టీటీడీ తెలిపింది.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/ttd-to-file-police-case-on-nayanthara-vignesh-shivan-for-walking-with-slippers-442580.html"
+                                    title="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/Nayanthara-Vignesh-Shivan-Slippers.jpg"
+                                        alt="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/ttd-to-file-police-case-on-nayanthara-vignesh-shivan-for-walking-with-slippers-442580.html"
+                                        title="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన">Nayanthara
+                                        Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు
+                                        చేస్తామని ప్రకటన</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:07 PM IST</div>
+                                <p>సినీ నటి నయనతార దంపతులపై టీటీడీ సీరియస్ అయ్యింది. నయనతార దంపతులపై పోలీసులకు ఫిర్యాదు
+                                    చేస్తామంది. ఏయే సెక్షన్ల కింద కేసు నమోదు చేయొచ్చన్న దానిపై చర్చిస్తోంది.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/operation-tiger-continues-in-kakinada-district-442578.html"
+                                    title="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/kakinada-tiger.jpg"
+                                        alt="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి" widht="222"
+                                        height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/operation-tiger-continues-in-kakinada-district-442578.html"
+                                        title="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి">Kakinada Tiger :
+                                        అటవీ అధికారులను తిప్పలు పెడుతున్న పులి</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:10 PM IST</div>
+                                <p>గత 20 రోజులుగా కాకినాడ జిల్లాలోని గ్రామీణ ప్రాంత ప్రజలకు కంటి మీద కునుకు లేకుండా
+                                    చేస్తున్న పులి తన స్ధావరాన్ని తరుచూగా మారుస్తోంది.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/cm-jagan-review-with-officials-of-various-departments-orders-to-increase-revenue-442494.html"
+                                    title="CM Jagan On Revenue : ఆదాయం పెంచాలని సీఎం జగన్ ఆదేశం, ఆ శాఖ ప్రక్షాళనకు నిర్ణయం">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/CM-Jagan-On-Revenue.jpg"
+                                        alt="CM Jagan On Revenue : ఆదాయం పెంచాలని సీఎం జగన్ ఆదేశం, ఆ శాఖ ప్రక్షాళనకు నిర్ణయం"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/cm-jagan-review-with-officials-of-various-departments-orders-to-increase-revenue-442494.html"
+                                        title="CM Jagan On Revenue : ఆదాయం పెంచాలని సీఎం జగన్ ఆదేశం, ఆ శాఖ ప్రక్షాళనకు నిర్ణయం">CM
+                                        Jagan On Revenue : ఆదాయం పెంచాలని సీఎం జగన్ ఆదేశం, ఆ శాఖ ప్రక్షాళనకు నిర్ణయం</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 07:00 PM IST</div>
+                                <p>ఆదాయాన్ని తీసుకువచ్చే ప్రభుత్వ శాఖల ప్రగతిని సమీక్షించారు ముఖ్యమంత్రి జగన్.
+                                    రాష్ట్రానికి ఆదాయం పెంచేలా చర్యలు తీసుకోవాలని అధికారులను ఆదేశించారు.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/janasena-chief-pawan-kalyan-will-be-touring-in-ap-from-october-5-442452.html"
+                                    title="Pawan Kalyan : జనంలోకి జనసేనాని..ఏపీలో అక్టోబర్ 5 నుంచి పవన్ పర్యటన">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/pawan-kalyan-1.webp"
+                                        alt="Pawan Kalyan : జనంలోకి జనసేనాని..ఏపీలో అక్టోబర్ 5 నుంచి పవన్ పర్యటన"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/janasena-chief-pawan-kalyan-will-be-touring-in-ap-from-october-5-442452.html"
+                                        title="Pawan Kalyan : జనంలోకి జనసేనాని..ఏపీలో అక్టోబర్ 5 నుంచి పవన్ పర్యటన">Pawan
+                                        Kalyan : జనంలోకి జనసేనాని..ఏపీలో అక్టోబర్ 5 నుంచి పవన్ పర్యటన</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 06:17 PM IST</div>
+                                <p>తిరుపతి నుంచి పవన్ టూర్ ప్రారంభం కానుంది. విజయదశమి రోజు పవన్ పర్యటకు ముహూర్తం ఖరారు
+                                    చేశారు. దసరా రోజు జనసేనాని పర్యటన మొదలు పెట్టనున్నారు.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/crime/ap-cid-notices-to-tdp-general-secretary-gouthu-sireesha-once-again-442599.html"
+                                    title="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/New-Project-35.jpg"
+                                        alt="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/crime/ap-cid-notices-to-tdp-general-secretary-gouthu-sireesha-once-again-442599.html"
+                                        title="Gouthu Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి">Gouthu
+                                        Sireesha : గౌతు శిరీషకు మరోసారి నోటీసులు ఇచ్చిన ఏపీ సీఐడి</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:44 PM IST</div>
+                                <p>తెలుగు దేశం పార్టీ రాష్ట్ర ప్రధాన కార్యదర్శి, శ్రీకాకుళం జిల్లా పలాస
+                                    నియోజకవర్గ ఇంచార్జి గౌతు శిరీష‌కు ఏపీ సీఐడీ అధికారులు మరోసారి నోటీసులు జారీ
+                                    చేశారు.&nbsp; ఈనెల 20వ తేదీన మంగళగిరి సీఐడీ కార్యాలయంలో విచారణకు హాజరుకావాలని
+                                    ఆదేశించారు.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/spiritual/jyestabhishekam-abideyaka-abhishekam-seva-tickets-to-be-released-tomorrow-442590.html"
+                                    title="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/Jeyshtabhishekam.jpg"
+                                        alt="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/spiritual/jyestabhishekam-abideyaka-abhishekam-seva-tickets-to-be-released-tomorrow-442590.html"
+                                        title="Tirumala : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు">Tirumala
+                                        : జూన్ 11 నుంచి భ‌క్తుల‌కు అందుబాటులో జ్యేష్టాభిషేకం సేవా టికెట్లు</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:22 PM IST</div>
+                                <p>తిరుమలలో జూన్ 12 నుంచి 14వతేదీ వరకు మూడు రోజులపాటు జరిగే జ్యేష్టాభిషేకం సేవా టికెట్లు
+                                    జూన్ 11 నుంచి 13వ తేదీ వరకు తిరుమలలో కరం0ట్ బుకింగ్‌లో భక్తులకు అందుబాటులో ఉంటాయని
+                                    టీటీడీ తెలిపింది.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/ttd-to-file-police-case-on-nayanthara-vignesh-shivan-for-walking-with-slippers-442580.html"
+                                    title="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/Nayanthara-Vignesh-Shivan-Slippers.jpg"
+                                        alt="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన"
+                                        widht="222" height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/ttd-to-file-police-case-on-nayanthara-vignesh-shivan-for-walking-with-slippers-442580.html"
+                                        title="Nayanthara Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు చేస్తామని ప్రకటన">Nayanthara
+                                        Vignesh Shivan Slippers : నయనతార దంపతులపై టీటీడీ సీరియస్.. పోలీసులకు ఫిర్యాదు
+                                        చేస్తామని ప్రకటన</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:07 PM IST</div>
+                                <p>సినీ నటి నయనతార దంపతులపై టీటీడీ సీరియస్ అయ్యింది. నయనతార దంపతులపై పోలీసులకు ఫిర్యాదు
+                                    చేస్తామంది. ఏయే సెక్షన్ల కింద కేసు నమోదు చేయొచ్చన్న దానిపై చర్చిస్తోంది.</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <div class="image-thumb">
+                                <a href="https://10tv.in/andhra-pradesh/operation-tiger-continues-in-kakinada-district-442578.html"
+                                    title="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి">
+                                    <img src="https://10tv.in/wp-content/uploads/2022/06/kakinada-tiger.jpg"
+                                        alt="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి" widht="222"
+                                        height="131">
+                                </a>
+                            </div>
+                            <figcaption>
+                                <h3>
+                                    <a href="https://10tv.in/andhra-pradesh/operation-tiger-continues-in-kakinada-district-442578.html"
+                                        title="Kakinada Tiger : అటవీ అధికారులను తిప్పలు పెడుతున్న పులి">Kakinada Tiger :
+                                        అటవీ అధికారులను తిప్పలు పెడుతున్న పులి</a>
+                                </h3>
+                                <div class="timestamp">June 10, 2022 / 09:10 PM IST</div>
+                                <p>గత 20 రోజులుగా కాకినాడ జిల్లాలోని గ్రామీణ ప్రాంత ప్రజలకు కంటి మీద కునుకు లేకుండా
+                                    చేస్తున్న పులి తన స్ధావరాన్ని తరుచూగా మారుస్తోంది.</p>
+                            </figcaption>
+                        </figure>
+                        <!-- pagination starts -->
+                        <nav data-pagination="">
+                            <a href="# disabled">←</a>
+                            <ul>
+                                <li class="current"><a href="#1">1</a>
+                                </li>
+                                <li><a href="#2">2</a>
+                                </li>
+                                <li><a href="#3">3</a>
+                                </li>
+                                <li><a href="#4">4</a>
+                                </li>
+                                <li><a href="#5">5</a>
+                                </li>
+                                <li><a href="#6">…</a>
+                                </li>
+                                <li><a href="#10">10</a>
+                                </li>
+                            </ul>
+                            <a href="#2">→</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="rightSidebar">
+                    <div class="latestNews_Block card_wrap">
+                        <div class="commonHD">
+                            <h2><a href="/latest">టాప్ 10 వార్తలు</a></h2>
+                        </div>
+                        <div class="newsList_wrapper">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/telangana/hyderabad-cp-cv-anand-about-punishment-for-accused-in-jubilee-hills-gang-rape-case-441029.html">CV
+                                        Anand On Punishment : జూబ్లీహిల్స్ గ్యాంగ్ రేప్ కేసు.. నిందితులకు
+                                        ఉరిశిక్ష..?</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/over-controversial-remarks-on-prophet-al-qaeda-threatens-attacks-in-parts-of-india-including-delhi-mumbai-441021.html">Prophet
+                                        Comments Row: ఢిల్లీ, ముంబైతో సహా పలు చోట్ల దాడులు జరుపుతామంటోన్న
+                                        ఆల్-ఖైదా</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/yogi-govt-transfers-21-ias-officers-including-dms-of-lucknow-kanpur-441019.html">Yogi
+                                        Govt: యోగి గవర్నమెంట్ షాకింగ్ డెసిషన్.. 21మంది ఐఏఎస్ ఆఫీసర్లు ట్రాన్సఫర్</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/telangana/jubilee-hills-gang-rape-case-hyderabad-cp-cv-anand-tells-details-441003.html">CV
+                                        Anand : జూబ్లీహిల్స్ గ్యాంగ్ రేప్ కేసు.. పక్కా ప్లాన్ ప్రకారమే అత్యాచారం,
+                                        అసలేం జరిగిందంటే..</a>
+                                </li>
+                                <li>
+                                    <a href="https://10tv.in/movies/ntr-to-have-villain-shades-in-ntr31-440998.html">NTR31:
+                                        ఎన్టీఆర్ మళ్లీ అలా కనిపిస్తాడా?</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/crime/198-kg-ganja-seized-one-arrested-at-bhadradri-kothagudem-district-440995.html">Telangana
+                                        : భద్రాద్రి కొత్తగూడెం జిల్లాలో భారీగా గంజాయి స్వాధీనం</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/man-arrested-from-tamil-nadu-for-whatsapp-threat-to-blow-up-rss-offices-440988.html">RSS
+                                        Offices: లక్నోలో ఆర్ఎస్ఎస్ ఆఫీసులు పేల్చేస్తానని బెదిరించిన వ్యక్తి
+                                        అరెస్ట్</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/spiritual/appalayagunta-venkateswara-swamy-temple-cleansed-for-the-annual-fete-440981.html">Appalayagunta
+                                        : అప్పలాయగుంటలో శాస్త్రోక్తంగా కోయిల్ ఆళ్వార్ తిరుమంజనం</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/movies/chiranjeevi-starts-dubbing-for-godfather-movie-440980.html">Chiranjeevi:
+                                        చిరు మళ్లీ మొదలుపెట్టాడు!</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/telangana/telangana-government-bans-on-government-doctors-private-practice-440974.html">Doctors
+                                        Private Practice : ప్రభుత్వ డాక్టర్లకు తెలంగాణ సర్కార్ షాక్</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="adsCont"></div>
+                    <div class="trendingNews_Block card_wrap">
+                        <div class="commonHD">
+                            <h2><a href="/trending">ట్రెండింగ్ వార్తలు</a></h2>
+                        </div>
+                        <div class="newsList_wrapper">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/what-is-norovirus-what-precautions-should-be-taken-to-avoid-getting-infected-with-the-virus-440612.html">
+                                        Norovirus: నోరో వైరస్ అంటే ఏమిటి? వైరస్ సోకకుండా ఎలాంటి జాగ్రత్తలు
+                                        తీసుకోవాలి..</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/movies/sai-pallavi-and-her-craze-is-seperate-from-other-heroins-440496.html">
+                                        Sai Pallavi : హీరోయిన్స్‌లలో సాయిపల్లవి వేరయా..</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/bangalore-iisc-researchers-have-developed-artificial-proteins-that-block-the-corona-virus-440550.html">
+                                        Corona Virus : కరోనా వైరస్ ను కట్టడి చేసే కృత్రిమ ప్రోటీన్ లు</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/national/the-central-government-has-taken-steps-to-run-the-first-bullet-train-between-surat-and-bilimora-in-gujarat-by-2026-440581.html">
+                                        Bullet Train : 2026 నాటికి భారత్ లో తొలి బుల్లెట్‌ రైలు</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://10tv.in/telangana/five-youths-raped-a-girl-in-secunderabad-for-two-months-hyderabad-440344.html">
+                                        Girl Raped : హైదరాబాద్ లో మరో దారుణం.. బాలికపై రెండు నెలలుగా ఐదుగురు
+                                        అత్యాచారం</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="adsCont"></div>
+                </div>
+                <div class="adsCont"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <span class="scrolltop"></span>
+        <div class="footer_container">
+            <div class="footer_top">
+                <div class="footer-logo">
+                    <a href="https://10tv.in"><img src="https://10tv.in/wp-content/themes/10tv/images/logo.png"
+                            alt="10TV Telugu News" width="118" height="94"></a>
+                </div>
+                <div class="short-links">
+                    <h2>తెలుగు వార్తలు</h2>
+                    <ul>
+                        <li><a title="Latest" href="https://10tv.in/latest">తాజా వార్తలు</a></li>
+                        <li><a title="Telangana" href="https://10tv.in/telangana">తెలంగాణ </a></li>
+                        <li><a title="Andhra Pradesh" href="https://10tv.in/andhra-pradesh/">ఆంధ్ర ప్రదేశ్</a></li>
+                        <li><a title="Movies" href="https://10tv.in/movies/">మూవీ రివ్యూస్</a></li>
+                        <li><a title="National" href="https://10tv.in/national/">జాతీయం</a></li>
+                        <li><a title="International" href="https://10tv.in/international/">అంతర్జాతీయం</a></li>
+                        <li><a title="Technology" href="https://10tv.in/technology/">టెక్నాలజీ</a></li>
+                        <li><a title="Education" href="https://10tv.in/education-and-job/">ఎడ్యుకేషన్</a></li>
+                    </ul>
+                </div>
+                <div class="short-links">
+                    <h2 class="title">Telugu News</h2>
+                    <ul>
+                        <li><a title="Trending" href="https://10tv.in/trending/">Top Stories</a></li>
+                        <li><a title="Sports" href="https://10tv.in/sports/">క్రీడలు</a></li>
+                        <li><a title="Crime" href="https://10tv.in/crime/">క్రైమ్</a></li>
+                        <li><a title="Business" href="https://10tv.in/business/">బిజినెస్‌</a></li>
+                        <li><a title="Life Style" href="https://10tv.in/life-style/">లైఫ్ స్టైల్</a></li>
+                        <li><a title="Videos" href="https://10tv.in/exclusive-videos/">వీడియోస్</a></li>
+                        <li><a title="Photo Gallery" href="https://10tv.in/photo-gallery/">ఫోటో గ్యాలరీ</a></li>
+                        <li><a title="Health" href="https://10tv.in/health/">హెల్త్</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li>
+                            <a target="_blank" rel="noopener" title="Facebook"
+                                href="https://www.facebook.com/10tvNewsTelugu/">
+                                <svg class="">
+                                    <use xlink:href="#fb-icon"></use>
+                                </svg>Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/10TvTeluguNews">
+                                <svg class="">
+                                    <use xlink:href="#tw-icon"></use>
+                                </svg>Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" title="YouTube"
+                                href="https://www.youtube.com/user/10TVNewsChannel">
+                                <svg class="">
+                                    <use xlink:href="#yt-icon"></use>
+                                </svg>YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener" title="Instagram"
+                                href="https://www.instagram.com/10tvnewstelugu/">
+                                <svg class="">
+                                    <use xlink:href="#in-icon"></use>
+                                </svg>Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-tags">
+                <ul>
+                    <li><a target="_blank" title="About" rel="noopener" href="https://10tv.in/about">About Us</a></li>
+                    <li><a target="_blank" title="Regulatory Compliance" rel="noopener"
+                            href="https://10tv.in/regulatory-compliance">Regulatory Compliance</a></li>
+                    <li><a target="_blank" title="Privacy Policy" rel="noopener"
+                            href="https://10tv.in/privacy-policy">Privacy Policy</a></li>
+                    <li><a target="_blank" title="Advertise" rel="noopener"
+                            href="https://10tv.in/advertise-with-us">Advertise</a></li>
+                </ul>
+            </div>
+            <div class="footer-credits">
+                <p>Copyright 2022 © Developed by <a target="_blank" rel="noopener" href="https://veegam.com/"> Veegam
+                        Software Pvt Ltd. </a></p>
+            </div>
+        </div>
+    </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="fb-icon" viewBox="0 0 24 24">
+            <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+        </symbol>
+        <symbol id="tw-icon" viewBox="0 0 24 24">
+            <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+        </symbol>
+        <symbol id="yt-icon" viewBox="0 0 24 24">
+            <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+        </symbol>
+        <symbol id="in-icon" viewBox="0 0 24 24">
+            <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+            </path>
+        </symbol>
+    </svg>
+</body>
+
+</html>
