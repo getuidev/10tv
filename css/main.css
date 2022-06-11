@@ -237,6 +237,8 @@ ol,ul{list-style-type:none}
 .gallery_wrapper .mediaBox .smallGal figure:nth-child(odd){margin-right:2%}
 .bigMedia_Block figure .image-thumb img,.gallery_wrapper .mediaBox img,.topStories_BigMedia figure img{height:inherit}
 .list-news{margin-top:10px}
+.list-news li{padding-left:15px;}
+.list-news li::before{left: 0;}
 .leftSidebar,.rightSidebar{width:100%}
 .breadcrumb li{font-weight:500;color:#2e2f30}
 .breadcrumb li a{color:#2e2f30}
