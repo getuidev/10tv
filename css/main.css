@@ -72,7 +72,7 @@ ol,ul{list-style-type:none}
 .topNews_Block .bigMedia_Block figure .image-thumb{width:389px}
 .bigMedia_Block figure .image-thumb img{display:block}
 .topNews_Block .bigMedia_Block figcaption{width:calc(100% - 389px);background:radial-gradient(ellipse at center,#000,#5b585c);padding:10px}
-.topNews_Block .bigMedia_Block figcaption h1 a{color:#fff;font-family:Ramabhadra,sans-serif;font-size:24px;font-weight:400;line-height:30px}
+.topNews_Block .bigMedia_Block figcaption h3 a{color:#fff;font-family:Ramabhadra,sans-serif;font-size:24px;font-weight:400;line-height:30px}
 .topNews_Block .bigMedia_Block figcaption p{color:#fff;font-family:Mallanna,sans-serif;font-size:16px;font-weight:400;line-height:22px;margin-top:10px}
 .smallMedia_Block{display:flex}
 .smallMedia_Block figure .image-thumb img{display:block;width:100%;height:inherit;margin-bottom:10px;border-radius:4px}
