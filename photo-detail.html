@@ -156,6 +156,27 @@
                                                 src="https://10tvmedia.s3.amazonaws.com/wp-content/uploads/2022/05/kindpng_3618021.png"
                                                 alt=""></a></li>
                                 </ul>
+                                <div class="flexBox">
+                                    <div class="fixed-social">
+                                        <span id="share"><svg>
+                                                <use href="#share-icon"></use>
+                                            </svg></span>
+                                    </div>
+
+                                    <script>
+                                        document.querySelector('#share').addEventListener('click', function () {
+                                            if (typeof navigator.share === 'undefined') {
+                                                log("No share API available!");
+                                            } else {
+                                                navigator.share({
+                                                    title: 'Add Title',
+                                                    url: 'https://10tv.in/',
+                                                    text: ''
+                                                })
+                                            }
+                                        });
+                                    </script>
+                                </div>
                             </div>
                             <div class="photo_summary">
                                 <div class="photo_wrap">
