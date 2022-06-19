@@ -322,8 +322,8 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .social-icon{display: none;}
 .fixed-social{position:fixed;right:0;top:200px;box-shadow:-5px 4px 10px 0 rgba(0,0,0,.2);width:51px;height:44px;background-color:#5b5b5b;border-radius:8px 0 0 8px;z-index:2;display:flex;justify-content:center;align-items:center;cursor:pointer;-webkit-backface-visibility: hidden;}
 .fixed-social #share{width: 30px;height: 30px; fill: #fff; display:flex;}
-.inline-related-articles .inline-related-list{flex-wrap:wrap}
-.inline-related-articles .inline-related-list li{flex:auto;padding-right:0;padding-bottom:10px;border-right:0;border-bottom:2px solid #d70101;margin-right:0;margin-bottom:10px}
+.inline-related-articles .inline-related-list{flex-wrap: nowrap;overflow-x: auto;-webkit-overflow-scrolling: touch;}
+.inline-related-articles .inline-related-list li{flex:0 0 auto;margin-bottom:10px;width:45%}
 .inline-related-articles .inline-related-list li:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
 .footer_container{padding:0 10px}
 .footer .footer_top{justify-content:flex-start;flex-wrap:wrap}
