@@ -22,6 +22,7 @@ ol,ul{list-style-type:none}
 .topNav .topRmenu{display:flex;align-items:center}
 .topNav ul li{display:inline-block;margin:0 9px;position:relative}
 .topNav ul li a{font-size:16px;line-height:26px;font-weight:400;color:#fff;display:flex;align-items:center;font-family:Ramabhadra,sans-serif}
+.topNav ul li a:hover{color: #d70101;}
 .live-tv{position:relative;display:flex;align-items:center;margin:0 9px}
 .live-tv a{color:#fff;font-size:14px;font-weight:700}
 .live-tv:before{width:8px;height:8px;content:"";background:#fff;border-radius:50px;margin-right:5px}
@@ -244,6 +245,7 @@ to{transform:scale(3);opacity:0}
 .footer .footer_top .footer-logo{display:flex;align-items:center}
 .footer .footer_top .short-links ul,.social-links ul{padding-top:15px;line-height:29px}
 .footer .footer_top .short-links ul li a,.social-links ul li a{color:#b7b7b7}
+.footer .footer_top .short-links ul li a:hover,.footer .footer-tags ul li a:hover{color:#d70101}
 .social-links ul li a{display:flex;align-items:center}
 .social-links svg{display:flex;width:16px;height:16px;background-image:none;margin-right:10px;align-items:center;fill:#b7b7b7}
 .footer .footer-tags{padding:20px 0}
