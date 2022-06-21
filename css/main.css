@@ -151,7 +151,7 @@ ol,ul{list-style-type:none}
 .tags_wrapper ul{white-space:nowrap;overflow-x:auto;overflow-y:hidden}
 .topNews_Category .bigMedia_Block figure{flex-wrap:wrap}
 .topNews_Category .bigMedia_Block .image-thumb{margin-bottom:10px}
-.topNews_Category .bigMedia_Block figcaption h1{color:#131415;font-family:Ramabhadra,sans-serif;padding-top:15px;font-size:23px;font-weight:400;line-height:22px;word-break:keep-all}
+.topNews_Category .bigMedia_Block figcaption h1{color:#131415;font-family:Ramabhadra,sans-serif;font-size:23px;font-weight:400;line-height:22px;word-break:keep-all}
 .timestamp{color:#949494;font-family:Ramabhadra,sans-serif;font-size:12px;font-weight:400;line-height:23px;text-align:left;margin-top:10px}
 .topNews_Category .smallMedia_Block figure{width:32%}
 .topNews_Category .smallMedia_Block .image-thumb img{border-radius:0}
